@@ -4,16 +4,16 @@ Using 'crypto-js/sha256' to generate hash, and uisng 'elliptic' to generate priv
 
  The Needed Classes For This Project: <br />
 
- ##Class Block: <br />
- ###property: timestamp, transactions, previousHash, hash, nonce; <br />
- ###method:<br />
+ ##Class Block:<br />
+**property**: timestamp, transactions, previousHash, hash, nonce; <br />
+**method:**<br />
  calculateHash(): using sha256 and the class' property to generate hash. <br />
  mineBlock(diff): if a generated hash start with diff 0’s, block can be mine. <br />
  hasValidTransactions(): if any Transaction is invalid, chain is invalid; <br />
  <br />
  ##Class Blockchain:<br />
- ###property: chain, diff, pendingTransactions, reward
- ###method: 
+ **property**: chain, diff, pendingTransactions, reward
+**method: ** <br />
  createGenesisBlock(): create Genesis Block. <br />
  getLatestBlock(): get the last Block in the Blockchain. <br /> 
  minePendingTransactions(mineRewardAddress):create a new block first, perhash equal last hash, <br/>
@@ -26,8 +26,8 @@ Using 'crypto-js/sha256' to generate hash, and uisng 'elliptic' to generate priv
  invalid, invalid chain <br />
  <br />
  ##Class Transction:<br />
- ###property: timestamp, transactions, previousHash, hash, nonce; <br />
- ###method: <br />
+ **property**: timestamp, transactions, previousHash, hash, nonce; <br />
+**method: **<br />
  calculateHash(): calculate the transaction hash. <br />
  signTransaction(signingKey): If the private key is not the pair of fromAddress(public key), <br /> 
  transaction is invalid! Otherwise, calculateHash, sign it, this transction signature is  <br />
