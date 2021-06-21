@@ -1,6 +1,7 @@
 # Block-Chain-Project-JDCoin
 This project is a basic project for understand blockchain, <br />
 Using 'crypto-js/sha256' to generate hash, and uisng 'elliptic' to generate private and public keys.<br />
+**Need to require 'crypto-js/sha256' and 'elliptic'!!!**
 
  The Needed Classes For This Project: <br />
 
