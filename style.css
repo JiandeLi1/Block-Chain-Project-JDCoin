@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+
+
+
+.header{
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 3rem;
+    font-weight: 700;
+    color:aliceblue;
+    background-color: rgb(131, 147, 236);
+}
+
+.container{
+    display: flex;
+}
+
+
+.right, .left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    margin: 15px 0;
+}
+.chain{
+    padding: 10px;
+    height: 60vh;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.24); 
+    box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.24);   
+    overflow-y: auto;
+}
+
+.makeTransaction div{
+    margin: 10px 0;
+}
+
+.list{
+    margin: 0 10px;
+    margin-bottom: 20px;
+    border-bottom:1px solid black;
+}
+
+.list div{
+    margin: 10px 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#mining, #send{
+    width: 24.5%;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(131, 147, 236);
+}
+
+#send{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#mine, #valid{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.stateValid{
+    color: rgb(131, 147, 236);
+}
+
+.stateInvalid{
+    color: rgb(247, 19, 19);
+}
+
+
+
